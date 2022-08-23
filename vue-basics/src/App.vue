@@ -2,17 +2,19 @@
   <span>{{iterationTwoString}}</span>
   <NavBar/>
   <router-view/>
+  <IterationFour/>
   <FooTer/>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue';
 import FooTer from './components/FooTer.vue';
+import IterationFour from './components/IterationFour.vue';
 
 export default {
   name: 'App',
   components: {
-    NavBar, FooTer,
+    NavBar, IterationFour, FooTer,
   },
   setup() {
     const iterationTwoString = '2+2=...';
